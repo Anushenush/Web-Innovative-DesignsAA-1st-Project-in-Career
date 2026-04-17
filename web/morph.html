@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Designs</title>
+
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <script src="main.js"></script>
+
+</head>
+
+<style>
+    /*Whole html design */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Raleway, Arial;
+    }
+    /*Body designing */
+    
+    body {
+        background: white;
+    }
+    /*nav box design */
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*class nbar box+font  design */
+    
+    .nbar {
+        font-size: 17px;
+        font-weight: 800;
+        cursor: pointer;
+        color: rgb(121, 121, 170);
+        padding: 10px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*class nbar bold color design */
+    
+    .nbar b {
+        color: purple;
+    }
+    /*list design */
+    
+    ol {
+        display: flex;
+        margin: auto 0;
+        list-style: none;
+    }
+    /*Whole html design */
+    
+    ol li {
+        margin: 0 10px;
+    }
+    /*attributes ,font ,box ,color design */
+    
+    ol li a {
+        font-size: 20px;
+        color: rgb(179, 111, 179);
+        text-transform: capitalize;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 8px 12px;
+        border: 1px solid rgb(224, 162, 224);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*attribute transitions design */
+    
+    a {
+        transition-property: margin-right rgb(179, 71, 179);
+        transition-duration: 1s;
+    }
+    /*ATT transition using ol il */
+    
+    ol li:hover a,
+    ol li :focus a {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    .bar {
+        position: relative;
+        display: none;
+    }
+    
+    .bar span {
+        color: purple;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 17px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    ol li:hover #designs1,
+    ol li :focus #designs1 {
+        color: rgb(174, 0, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    #designs1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    .dnbar {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 5%;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    #ol2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto 0;
+        list-style: none;
+    }
+    /*Whole html design */
+    
+    #ol2 #li2 {
+        margin: 0 10px;
+    }
+    /*attributes ,font ,box ,color design */
+    
+    #ol2 #li2 #a2 {
+        font-size: 20px;
+        color: rgb(179, 111, 179);
+        text-transform: capitalize;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 8px 12px;
+        border: 1px solid rgb(224, 162, 224);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    #a2 {
+        transition-property: margin-right rgb(179, 71, 179);
+        transition-duration: 1s;
+    }
+    /*ATT transition using ol il */
+    
+    #ol2 #li2:hover #a2,
+    #ol2 #li2 :focus #a2 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    /*ATT transition using ol il */
+    
+    #a3 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        scrollbar-gutter: stable both-edges;
+    }
+    
+    .info2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        margin-top: 5px;
+    }
+    
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        margin-top: 20%;
+    }
+    
+    h1 {
+        text-shadow: purple;
+        margin-top: -3%;
+        margin-left: -15%;
+        font-size: 3vw;
+        color: blueviolet;
+        line-height: 90px;
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+    
+    h3 {
+        font-size: 4vw;
+        color: rgb(68, 1, 131);
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgb(174, 0, 255);
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        margin-top: 15%;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    
+    h3 {
+        font-weight: 900;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+        border-left: 20px solid purple;
+        border-radius: 20px;
+    }
+    /* The typing effect */
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+        to {
+            width: 20%
+        }
+    }
+    /* The typewriter cursor effect */
+    
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent
+        }
+        50% {
+            border-color: rgb(174, 0, 255);
+        }
+    }
+    
+    p {
+        color: rgb(127, 0, 177);
+        font-size: 3vh;
+        line-height: 50px;
+        font-weight: 600;
+        margin-left: -5%;
+        margin-top: 10%;
+        border-left: 3px solid rgb(188, 7, 233);
+        border-bottom: 10px solid rgb(188, 7, 233);
+        width: 90%;
+        border-radius: 30px;
+    }
+    
+    #p2 {
+        color: rgb(83, 0, 116);
+        font-size: 3vh;
+        line-height: 50px;
+        font-weight: 600;
+        margin-left: -5%;
+        margin-top: 10%;
+        border-left: 3px solid rgb(188, 7, 233);
+        border-bottom: 10px solid rgb(188, 7, 233);
+        width: 90%;
+        border-radius: 30px;
+    }
+    
+    h4 {
+        padding: auto;
+        margin-top: 5%;
+        margin-left: -6%;
+        font-size: 6vh;
+        line-height: 10vw;
+        color: blueviolet;
+        box-shadow: -7px -7px 17px #e2dcdc, 7px 7px 17px rgba(0, 0, 0, 0.705);
+        border-left: 1.5vw solid rgb(188, 7, 233);
+        border-radius: 10px;
+    }
+    
+    @media screen and (max-width:800px) {
+        nav {
+            display: block;
+            padding: 0;
+        }
+        .nbar {
+            display: inline-block;
+            margin: 20px 50px;
+        }
+        ol {
+            display: block;
+            width: 100%;
+        }
+        ol li {
+            position: relative;
+            margin: 40px 0;
+            display: none;
+        }
+        ol li a {
+            width: 90%;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+            display: block;
+            border-radius: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+        .bar {
+            display: block;
+            position: absolute;
+            top: 08px;
+            right: 80px;
+            cursor: pointer;
+        }
+        .bar #times {
+            color: rgb(226, 117, 184);
+            display: none;
+        }
+        #check:checked~nav ol li {
+            display: block;
+        }
+        #check:checked~nav .bar #times {
+            display: block;
+        }
+        #check:checked~nav .bar #bars {
+            display: block;
+        }
+        #designs1 {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+            border: 1px solid rgb(235, 96, 235);
+            box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+            background-color: rgb(235, 105, 235);
+        }
+        .dnbar {
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5px 170px;
+        }
+        #ol2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 35px;
+        }
+        #li2 {
+            display: flex;
+            display: contents;
+        }
+        #ol2 #li2 #a2 {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            text-align: center;
+            padding: 5px 50px;
+            font-size: 10px;
+            border-radius: 15px;
+            left: -30%;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50px;
+        }
+        #a3 {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            text-align: center;
+            padding: 5px 50px;
+            font-size: 10px;
+            border-radius: 15px;
+            left: -30%;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50px;
+        }
+        p {
+            color: rgb(127, 0, 177);
+            font-size: 2vh;
+            line-height: 50px;
+            font-weight: 600;
+            margin-left: -3%;
+            margin-top: 10%;
+            border-left: 3px solid rgb(188, 7, 233);
+            border-bottom: 20px solid rgb(188, 7, 233);
+            width: 90%;
+            border-radius: 30px;
+        }
+        #p2 {
+            color: rgb(83, 0, 116);
+            font-size: 2vh;
+            line-height: 50px;
+            font-weight: 600;
+            margin-left: -2%;
+            margin-top: 10%;
+            border-bottom: 3px solid rgb(77, 0, 77);
+            border-left: 3px solid rgb(188, 7, 233);
+            border-bottom: 20px solid rgb(188, 7, 233);
+            width: 90%;
+            border-radius: 30px;
+        }
+        h4 {
+            padding: auto;
+            margin-top: 5%;
+            margin-left: -6%;
+            font-size: 2vh;
+            line-height: 10vw;
+            color: blueviolet;
+            box-shadow: -7px -7px 17px #e2dcdc, 7px 7px 17px rgba(0, 0, 0, 0.705);
+            border-left: 1.5vw solid rgb(188, 7, 233);
+            border-radius: 10px;
+        }
+    }
+</style>
+
+<body>
+    <input type="checkbox" id="check">
+
+    <nav style="position: relative;">
+        <div class="nbar">Designs<b>AA</b></div>
+
+        <ol><b></b>
+            <li><a id="home1" href="#" class="ha" onclick="homere()">Home</a> </li>
+            
+            <li><a id="designs1" href="#" class="da">Designs</a> </li>
+            <li><a href="#" class="aa" onclick="about()">About</a> </li>
+        </ol>
+
+        <label for="check" class="bar">
+            <span class="fas fa-bars" id="bars"></span>
+            <span class="fas fa-times" id="times"></span>
+        </label>
+
+    </nav>
+
+    <nav class="dnbar">
+
+        <ol id="ol2">
+            <li id="li2"><a id="a2" class="if" href="#" onclick="Redirect1()"><b>InfoGraphic</b></a> </li>
+            <li id="li2"><a id="a2" href="#" onclick="Redirect2()"><b>Neumorphism</b></a> </li>
+            <li id="li2"><a id="a3" href="#"><b>Morph</b></a> </li>
+            <li id="li2"><a id="a2" href="#" onclick="Redirect3()"><b>InnovativeCharts</b></a> </li>
+        </ol>
+    </nav>
+    <div class="info">
+
+        <div class="info2">
+            <img src="./Morph.jpg " width=" 100% ">\
+
+            <br>
+            <h3>Morph - Graphics</h3>
+            <h4>What is Morph in design?</h4>
+            <p id="p2"> The Morph transition allows you to animate smooth movement from one slide to the next. Play. You can apply the Morph transition to slides to create the appearance of movement in a wide range of things—text, shapes, pictures, SmartArt graphics,
+                and WordArt. However, charts don't morph.</p>
+
+            <div class="col ">
+                <br>
+                <h1 id="inb ">Morphing with innovative</h1>
+                <img src="./morph1.png " width="100% ">
+                <p id="p2"> Here, is the most innovative designs tht which attracts your client in a very smarter way.</p>
+            </div>
+            <div class=" col ">
+                <br>
+                <h1 id="b2 ">For Chemistry</h1>
+                <img src="./morph2.png " width="100% ">
+                <p id="p2"> Here, For school or College purpose also we can design and in a very cool way you can explain every thing to your students and its very simple and easy</p>
+            </div>
+
+            <div class="col ">
+                <h1 id="b2 ">For charts</h1>
+                <img src="./morph3.png " width="100% ">
+                <p id="p2"> for charts also we can do this </p>
+                <br>
+            </div>
+            <div class="col ">
+                <h1 id="b2 ">For Easy & Official Creatives </h1>
+                <img src="./morph4.png " width="100% ">
+                <p id="p2">Official or easy if you nee then we can choose this also</p>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript ">
+    function Redirect1() {
+        location.href = "info.html ";
+    }
+
+    function Redirect2() {
+        location.href = "nemo.html ";
+    }
+
+    function Redirect3() {
+        location.href = "chart.html ";
+    }
+
+    function homere() {
+        location.href = "home.html ";
+    }
+
+    function about() {
+        location.href = "about.html";
+    }
+</script>
+
+</html>

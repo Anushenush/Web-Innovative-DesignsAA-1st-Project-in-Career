@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>Project Designs</title>
+
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <script src="main.js"></script>
+
+</head>
+
+<style>
+    /*Whole html design */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Raleway, Arial;
+    }
+    /*Body designing */
+    
+    body {
+        background: white;
+    }
+    /*nav box design */
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*class nbar box+font  design */
+    
+    .nbar {
+        font-size: 17px;
+        font-weight: 800;
+        cursor: pointer;
+        color: rgb(121, 121, 170);
+        padding: 10px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*class nbar bold color design */
+    
+    .nbar b {
+        color: purple;
+    }
+    /*list design */
+    
+    ol {
+        display: flex;
+        margin: auto 0;
+        list-style: none;
+    }
+    /*Whole html design */
+    
+    ol li {
+        margin: 0 10px;
+    }
+    /*attributes ,font ,box ,color design */
+    
+    ol li a {
+        font-size: 20px;
+        color: rgb(179, 111, 179);
+        text-transform: capitalize;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 8px 12px;
+        border: 1px solid rgb(224, 162, 224);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    /*attribute transitions design */
+    
+    a {
+        transition-property: margin-right rgb(179, 71, 179);
+        transition-duration: 1s;
+    }
+    /*ATT transition using ol il */
+    
+    ol li:hover a,
+    ol li :focus a {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    ol li:hover #home1,
+    ol li :focus #home1 {
+        color: rgb(174, 0, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    .bar {
+        position: relative;
+        display: none;
+    }
+    
+    .bar span {
+        color: purple;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 17px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    ol li:hover #designs1,
+    ol li :focus #designs1 {
+        color: rgb(174, 0, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    #designs1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    .dnbar {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 5%;
+        border: 1px solid rgba(255, 255, 255, 0.884);
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    #ol2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto 0;
+        list-style: none;
+    }
+    /*Whole html design */
+    
+    #ol2 #li2 {
+        margin: 0 10px;
+    }
+    /*attributes ,font ,box ,color design */
+    
+    #ol2 #li2 #a2 {
+        font-size: 20px;
+        color: rgb(179, 111, 179);
+        text-transform: capitalize;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding: 8px 12px;
+        border: 1px solid rgb(224, 162, 224);
+        border-radius: 10px;
+        box-shadow: -7px -7px 17px #fff, 7px 7px 17px rgba(0, 0, 0, 0.171);
+    }
+    
+    #a2 {
+        transition-property: margin-right rgb(179, 71, 179);
+        transition-duration: 1s;
+    }
+    /*ATT transition using ol il */
+    
+    #ol2 #li2:hover #a2,
+    #ol2 #li2 :focus #a2 {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+        border: 1px solid rgb(235, 96, 235);
+        box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+        background-color: rgb(235, 105, 235);
+    }
+    
+    .pload {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        scrollbar-gutter: stable both-edges;
+    }
+    
+    .ipload {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        background-repeat: repeat-x;
+        margin-top: 5px;
+    }
+    
+    h1 {
+        margin-top: -50%;
+        margin-left: -20%;
+        font-size: 6vh;
+        line-height: 10vw;
+        color: blueviolet;
+        box-shadow: -7px -7px 17px #e2dcdc, 7px 7px 17px rgba(0, 0, 0, 0.705);
+        border-left: 1.5vw solid rgb(188, 7, 233);
+        border-radius: 10px;
+    }
+    
+    #ipara {
+        position: relative;
+        color: rgb(127, 0, 177);
+        font-size: 3vh;
+        line-height: 5vh;
+        font-weight: 600;
+        margin-left: -2%;
+        margin-top: 6%;
+        border-left: 3px solid purple;
+        border-bottom: 20px solid purple;
+        width: 90%;
+        border-radius: 30px;
+    }
+    
+    #h2info {
+        position: relative;
+        margin-top: 8%;
+        margin-left: -6%;
+        font-size: 6vh;
+        line-height: 10vw;
+        color: blueviolet;
+        box-shadow: -7px -7px 17px #e2dcdc, 7px 7px 17px rgba(0, 0, 0, 0.705);
+        border-left: 1.5vw solid rgb(188, 7, 233);
+        border-radius: 10px;
+    }
+    
+    @media screen and (max-width:800px) {
+        nav {
+            display: block;
+            padding: 0;
+        }
+        .nbar {
+            display: inline-block;
+            margin: 20px 50px;
+        }
+        ol {
+            display: block;
+            width: 100%;
+        }
+        ol li {
+            position: relative;
+            margin: 40px 0;
+            display: none;
+        }
+        ol li a {
+            width: 90%;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+            display: block;
+            border-radius: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+        .bar {
+            display: block;
+            position: absolute;
+            top: 08px;
+            right: 80px;
+            cursor: pointer;
+        }
+        .bar #times {
+            color: rgb(226, 117, 184);
+            display: none;
+        }
+        #check:checked~nav ol li {
+            display: block;
+        }
+        #check:checked~nav .bar #times {
+            display: block;
+        }
+        #check:checked~nav .bar #bars {
+            display: block;
+        }
+        #designs1 {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 0.125em hsl(0 0% 100% /0.5), 0 0 0.45em currentColor;
+            border: 1px solid rgb(235, 96, 235);
+            box-shadow: -7px -7px 17px rgb(235, 96, 235), 7px 7px 17px rgb(235, 96, 235);
+            background-color: rgb(235, 105, 235);
+        }
+        .dnbar {
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5px 170px;
+        }
+        #ol2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 35px;
+        }
+        #li2 {
+            display: flex;
+            display: contents;
+        }
+        #ol2 #li2 #a2 {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            text-align: center;
+            padding: 5px 50px;
+            font-size: 10px;
+            border-radius: 15px;
+            left: -30%;
+            transform: translateX(-50%);
+            position: relative;
+            left: 50px;
+        }
+        h1 {
+            margin-top: -50%;
+            margin-left: -20%;
+            font-size: 4vh;
+            line-height: 5vw;
+            color: blueviolet;
+            box-shadow: -7px -7px 17px #e2dcdc, 7px 7px 17px rgba(0, 0, 0, 0.705);
+            border-left: 1.5vw solid rgb(188, 7, 233);
+            border-radius: 10px;
+        }
+        #ipara {
+            color: rgb(127, 0, 177);
+            font-size: 2vh;
+            line-height: 5vh;
+            font-weight: 600;
+            margin-left: 5%;
+            border-left: 3px solid purple;
+            border-bottom: 15px solid purple;
+            width: 70%;
+            border-radius: 30px;
+        }
+        #h2info {
+            margin-top: 5%;
+            margin-left: -6%;
+            font-size: 2vh;
+            line-height: 5vw;
+            color: blueviolet;
+            box-shadow: -7px -7px 17px #e2dcdc, 7px 7px 17px rgba(0, 0, 0, 0.705);
+            border-left: 1.5vw solid rgb(188, 7, 233);
+            border-radius: 10px;
+        }
+    }
+</style>
+
+<body>
+    <input type="checkbox" id="check">
+
+    <nav style="position: relative;">
+        <div class="nbar">Designs<b>AA</b></div>
+
+        <ol><b></b>
+            <li><a id="home1" href="#" class="ha" onclick="homere()">Home</a> </li>
+            
+            <li><a id="designs1" href="#" class="da" onclick="Redirect()">Designs</a> </li>
+            <li><a href="#" class="aa" onclick="about()">About</a> </li>
+        </ol>
+
+        <label for="check" class="bar">
+            <span class="fas fa-bars" id="bars"></span>
+            <span class="fas fa-times" id="times"></span>
+        </label>
+
+    </nav>
+
+    <nav class="dnbar">
+
+        <ol id="ol2">
+            <li id="li2"><a id="a2" href="#" onclick="Redirect2()"><b>InfoGraghic</b></a> </li>
+            <li id="li2"><a id="a2" href="#"><b>Neumorphism</b></a> </li>
+            <li id="li2"><a id="a2" href="#"><b>Morph</b></a> </li>
+            <li id="li2"><a id="a2" href="#"><b>InnovativeCharts</b></a> </li>
+        </ol>
+    </nav>
+    <div class="pload" style="background: #f1eef3;">
+
+        <div class="ipload" style="background: #f1eef3;">
+            <img src="./desipage.jpg" width="100%">
+            <h1>DESIGNSAA </h1>
+            <p id="ipara"><br>So, here we have lot of types in the ppt graphics. <br>* Info <br>* Nemo <br> and more we have . <br> </p>
+            <h2 id="h2info">What is A Design ?</h2>
+            <p id="ipara"> a plan or drawing produced to show the look and function or <br>workings of a building, garment, <br>or other object before it is made. </p>
+            <h2 id="h2info">Why in Presentations the Creativity <br> and ideology need ?</h2>
+            <p id="ipara"> <br> Creativity helps you communicate letter. <br> Whether you are giving a presentation,<br> writing a report, or simply having a conversation,<br> the ability to communicate your ideas in a clear <br>and engaging way is crucial. </p>
+        </div>
+
+        <h2 id="h2info">What Presentations Speak ? </h2>
+        <p id="ipara"> <br> It show your excitement about idea . <br>A presentation is a formal speech that conveys information <br>from a speaker to an audience. <br>Presentations can be demonstrations, introductions, <br>lectures, or speeches. Their purpose is to
+            educate, inform, <br>persuade, inspire, motivate, or <br>present a new idea or product.</p>
+
+        <h2 id="h2info">How to Do ?</h2>
+        <p id="ipara"> <br>* Experiment with color.It's surprising what a little color can do. <br> * Use a striking background theme.<br> * Put thoughts into speech bubbles.<br> * Abandon the slide-by-slide style.<br> * Tell your story with a video.<br> * Bring your
+            story to life with audio.<br> * Add animations.<br> * Create a timeline.<br></p>
+
+        <h2 id="h2info">Where to do ?</h2>
+        <p id="ipara"> *MS-Power Point<br> * Canva for a free presentation app
+
+            <br> * Beautiful.ai for AI-powered design
+
+            <br> * Prezi for non-linear, conversational presentations
+
+            <br> * Powtoon for video presentations
+
+            <br> * Genially for interactive, presenter-less presentations
+
+            <br> * Pitch for collaborating with your team on presentations
+
+            <br> * Zoho Show for a simple presentation app
+
+            <br> * Gamma for generative AI features </p>
+
+    </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function Redirect() {
+        location.href = "designs.html";
+    }
+
+    function Redirect2() {
+        location.href = "info.html";
+    }
+
+    function homere() {
+        location.href = "home.html";
+    }
+
+    function about() {
+        location.href = "about.html";
+    }
+</script>
+
+</html>
